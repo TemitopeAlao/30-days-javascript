@@ -1,0 +1,31 @@
+body {
+  background: url(https://i.pinimg.com/736x/4c/c8/d4/4cc8d4ce383cc1d9a97429abf3cc4daf.jpg)
+    center center/cover no-repeat;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-box {
+  width: 300px;
+
+  background: rgba(255, 255, 255, 0.01); /* semi-transparent white */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* BLUR is what gives the glass look */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* optional */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* soft border */
+  color: white;
+}
+
+.timer-content {
+  font-size: 36px;
+  text-align: center;
+  background: linear-gradient(90deg, #00e5ff, #80d8ff);
+  background: linear-gradient(90deg, #00e5ff, #80d8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
