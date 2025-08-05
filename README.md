@@ -28,13 +28,13 @@ I'm doing this to stay consistent, improve my problem-solving skills, and get be
 
 ## 📂 Project List
 
-| Day | Project Name     | Folder          |
-| --- | ---------------- | --------------- |
-| 1   | Digital Timer    | `01-timer`      |
-| 2   | Simple Piano App | `02-piano`      |
-| 3   | Calculator       | `03-calculator` |
-| 4   | BMI Checker      | `04-bmi`        |
-| ... | ...              | ...             |
+| Day | Project Name     | Folder            |
+| --- | ---------------- | ----------------- |
+| 1   | Digital Timer    | `01-timer`        |
+| 2   | Simple Piano App | `02-piano`        |
+| 3   | modal window     | `03-modal window` |
+| 4   | BMI Checker      | `04-bmi`          |
+| ... | ...              | ...               |
 
 _(I'll keep updating this list as I go.)_
 

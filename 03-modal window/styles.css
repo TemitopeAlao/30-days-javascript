@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(145deg, #ffffff, #d9e4ec);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.modal {
+  border-radius: 25px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 22px 35px #b1b1b1, -22px -22px 35px #ffffff;
+  height: 300px;
+  width: 450px;
+  padding: 20px 40px;
+  z-index: 20;
+}
+.modal-content {
+  display: block;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  font-weight: 450;
+  text-align: justify;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 18px;
+}
+span {
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button {
+  --color-primary: #00bfa6;
+  --color-secondary: #008f7a;
+  --color-tertiary: rgba(0, 191, 166, 0.4);
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 0 var(--color-secondary);
+  transform: skew(-8deg);
+  transition: all 0.1s ease;
+  filter: drop-shadow(0 15px 20px var(--color-tertiary));
+}
+
+.hidden {
+  display: none;
+}
+
+.scale-in-center {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(2px);
+  box-shadow: 0 0 0 var(--color-tertiary);
+}
+.scale-out-center {
+  animation: scale-out-center 0.4s ease both;
+}
+
+@keyframes scale-out-center {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
