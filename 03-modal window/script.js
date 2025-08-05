@@ -1,3 +1,5 @@
+"use strict";
+
 const overlay = document.querySelector(".overlay");
 const btn = document.querySelector(".button");
 const modalWindow = document.querySelector(".modal");
