@@ -33,7 +33,7 @@ function loadVoices() {
   );
   //console.log(filteredVoices);
 
-  // Add each matching voice as an <option> in the dropdown
+  //Add each matching voice as an <option> in the dropdown
   filteredVoices.forEach((voice) => {
     const option = document.createElement("option");
     option.value = voice.name;

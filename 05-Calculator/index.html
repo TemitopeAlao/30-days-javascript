@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuromophic Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <p class="screen-content"></p>
+      </div>
+      <div class="numbers">
+        <ul class="number-container">
+          <li class="clear">C</li>
+          <li class="math percentage">%</li>
+          <li class="toggle-btn">+</li>
+          <li class="math">&divide;</li>
+          <li class="number">7</li>
+          <li class="number">8</li>
+          <li class="number">9</li>
+          <li class="math">x</li>
+          <li class="number">4</li>
+          <li class="number">5</li>
+          <li class="number">6</li>
+          <li class="math">-</li>
+          <li class="number">1</li>
+          <li class="number">2</li>
+          <li class="number">3</li>
+          <li class="math equal">=</li>
+          <li class="number zero">0</li>
+          <li class="math dot">.</li>
+          <input class="l" type="checkbox" />
+        </ul>
+        <div class="percentage-container">
+          <div>
+            <label for="percentage-slider" id="percentage-label--slider"
+              >Percentage Slider</label
+            >
+            <input
+              type="range"
+              id="percentage-slider"
+              min="0"
+              max="100"
+              value="100"
+              step="1"
+            />
+          </div>
+          <span id="percentage-value">100%</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
