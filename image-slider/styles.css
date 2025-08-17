@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #5e5c5c;
+
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.container {
+  position: relative;
+  width: 60vw;
+  user-select: none;
+  height: 70vh;
+  text-align: center;
+}
+
+.image-after,
+.image-before {
+  position: absolute;
+  width: 60vw;
+  height: 70vh;
+}
+
+.image-before {
+  width: 30vw; /* clipping happens here */
+  z-index: 2;
+  overflow: hidden;
+}
+.image-after {
+  z-index: 1;
+}
+
+img {
+  width: 60vw;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 30vw; /* match the starting width of .image-before */
+  width: 0.2rem;
+  height: 100%;
+  background-color: #d7d5d5;
+  z-index: 10;
+  cursor: ew-resize;
+  transform: translateX(-50%);
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgb(206, 249, 235);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+}
+
+.circle span {
+  font-size: 10px;
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+}
+
+button {
+  background-color: #d7d5d5;
+  color: #080808;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  position: relative; /* enable z-index to work */
+  z-index: 1000;
+  top: 380px;
+}
